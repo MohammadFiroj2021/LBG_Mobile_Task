@@ -2,6 +2,7 @@ package com.app.gitHubUserList
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.app.gitHubUserList.model.GetUserListItem
+import com.app.gitHubUserList.viewModel.MainActivityViewModel
 import com.google.common.truth.Truth
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest

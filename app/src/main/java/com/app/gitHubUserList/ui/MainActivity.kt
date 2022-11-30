@@ -1,4 +1,4 @@
-package com.app.gitHubUserList
+package com.app.gitHubUserList.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,6 +9,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.app.gitHubUserList.viewModel.MainActivityViewModel
+import com.app.gitHubUserList.R
 import com.app.gitHubUserList.adapter.GitHubUserListAdapter
 import com.app.gitHubUserList.data.api.StatusCalled
 import com.app.gitHubUserList.databinding.ActivityMainBinding

@@ -1,9 +1,12 @@
-package com.app.gitHubUserList
+package com.app.gitHubUserList.viewModel
 
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.app.gitHubUserList.MyApplication
+import com.app.gitHubUserList.NetworkConnection
+import com.app.gitHubUserList.R
 import com.app.gitHubUserList.data.api.MainRepository
 import com.app.gitHubUserList.data.api.Resource
 import com.app.gitHubUserList.model.GetUserListItem
@@ -36,7 +39,9 @@ class MainActivityViewModel @Inject constructor(
                 }
         } else {
             isOnLine.value = false
-            Toast.makeText(application.applicationContext, application.applicationContext.getString(R.string.check_internet_connection), Toast.LENGTH_SHORT).show()
+            Toast.makeText(application.applicationContext, application.applicationContext.getString(
+                R.string.check_internet_connection
+            ), Toast.LENGTH_SHORT).show()
         }
     }
 
